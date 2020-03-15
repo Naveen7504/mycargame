@@ -34,11 +34,11 @@ self.addEventListener("activate", function(evt) {
 })
 
 // intercepting fetch requests
-self.addEventListener("fetch", function(evt) {
-  // console.log("fetch event",evt);
-  evt.respondWith(
-    caches.match(evt.request).then(function(cacheRes) {
-      return cacheRes || fetch(evt.request);
-    })
-  );
-})
+// self.addEventListener("fetch", function(evt) {
+//   // console.log("fetch event",evt);
+//   evt.respondWith(
+//     caches.match(evt.request).then(function(cacheRes) {
+//       return cacheRes || fetch(evt.request);
+//     })
+//   );
+// })
