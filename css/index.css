@@ -1,0 +1,292 @@
+body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: lightblue;
+}
+.container{
+  width: 255px;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+}
+.play{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 30px solid red;
+    border-bottom: 20px solid transparent;
+    transform: translateX(-10px) translateY(-20px);
+    cursor: pointer;
+}
+.play-text{
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    transform: translateX(-50%) translateY(30px);
+    font-size: 20px;
+    text-align: center;
+    /* width: 122px; */
+}
+.play:hover{
+  transform: scale(1.3) translateX(-10px) translateY(-10px);;
+}
+.play-modal{
+  background: rgba(0, 0, 0, 0.57);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+}
+.controls-selection{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+.button{
+  padding: 0.5rem;
+    margin: 0 5px;
+    display: inline-block;
+    background: white;
+    cursor: pointer;
+}
+.button.active{
+  background-color: red;
+  color: white;
+}
+.control-text{
+  color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+.highscore{
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+.score{
+}
+.score-meter{
+  position: fixed;
+    top: 0;
+    color: black;
+    background-color: #b7b7b7;
+    padding: 0.5rem 0;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+.leftcontrol{
+  position: fixed;
+left: 2rem;
+bottom: 5rem;
+font-size: 2rem;
+background-color: #223a6d;
+color: white;
+box-shadow: -3px 1px 10px black;
+padding: 0 0.5rem;
+text-align: center;
+z-index: 10;
+}
+.rightcontrol{
+  position: fixed;
+right: 2rem;
+bottom: 5rem;
+font-size: 2rem;
+background-color: #223a6d;
+color: white;
+box-shadow: -3px 1px 10px black;
+padding: 0 0.5rem;
+text-align: center;
+z-index: 10;
+}
+.water{
+  position: relative;
+  width: 20%;
+  height:100%;
+  background-color: lightblue;
+}
+.grass{
+  position: relative;
+    width: 40px;
+    height: 100%;
+    background-color: seagreen;
+    max-width: 85px;
+}
+.road{
+  position: relative;
+    background-color: gray;
+    width: 175px;
+    height: 100%;
+}
+.lines{
+  height: 100%;
+    z-index: 0;
+    border-left: 3px dashed white;
+}
+
+.left-line{
+  position: absolute;
+  left: 30%;
+  top: 0;
+}
+.right-line{
+  position: absolute;
+  right: 30%;
+  top:0;
+}
+.middle-line{
+  position: absolute;
+  left: 50%;
+  top:0;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.image-size{
+  width: 30px;
+  z-index: 5;
+}
+.car{
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  z-index: 4;
+  /* animation: move 6s 1s ease backwards; */
+}
+.treesize{
+  height: 40px;
+}
+.tree{
+  position: absolute;
+  left: 6px;
+  max-height: 40px;
+  z-index: 3;
+}
+.tree1{
+  animation: movedown 5s -800ms infinite linear;
+}
+.tree2{
+  animation: movedown 5s -1600ms infinite linear;
+}
+.tree3{
+  animation: movedown 5s -2400ms infinite linear;
+}
+.tree4{
+  animation: movedown 5s -3200ms infinite linear;
+}
+.tree5{
+  animation: movedown 5s -4000ms infinite linear;
+}
+.tree6{
+  animation: movedown 5s -4800ms infinite linear;
+}
+.tree7{
+  animation: movedown 5s -5600ms infinite linear;
+}
+.tree8{
+  animation: movedown 5s -6400s infinite linear;
+}
+.tree9{
+  animation: movedown 5s -7200s infinite linear;
+}
+.tree10{
+  animation: movedown 5s -8000s infinite;
+}
+
+
+.caropp{
+  position: absolute;
+  max-height: 40px;
+  z-index: 3;
+  top: -100px;
+}
+.caropp.leftcar{
+  left: 0%;
+}
+.caropp.middlecar{
+  left: 34%;
+}
+.caropp.rightcar{
+  left: 67%;
+}
+.caropp.left1car{
+  left: 5px;
+}
+.caropp.left2car{
+  left: 50px;
+}
+.caropp.right1car{
+  left: 95px;
+}
+.caropp.right2car{
+  left: 140px;
+}
+.carmover1{
+  animation: movedown 5s 2s 1 linear  backwards;
+}
+.carmover2{
+  animation: movedown 5s 3s 1 linear backwards;
+}
+.carmover3{
+  animation: movedown 5s 2.5s 1 linear backwards;
+}
+.carmover4{
+  animation: movedown 5s 3.5s infinite linear backwards;
+}
+.carmover5{
+  animation: movedown 5s 4.5s 1 linear backwards;
+}
+.carmover6{
+  animation: movedown 5s 13s 1 linear  backwards;
+}
+.carmover7{
+  animation: movedown 5s 17s infinite linear backwards;
+}
+.carmover8{
+  animation: movedown 5s 19s 1 linear backwards;
+}
+.carmover9{
+  animation: movedown 5s 23s 1 linear backwards;
+}
+.carmover10{
+  animation: movedown 5s 28s 1 linear backwards;
+}
+.footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  color: #edffed;
+  background-color: #006706;
+  padding: 0.5rem 1rem;
+  text-align: right;
+  font-size: 16px;
+  font-family: monospace;
+  z-index: 25;
+}
+@keyframes movedown {
+  0%{top:-50%;}
+  80%{top:120%;}
+  100%{top:120%;}
+}
+
+@keyframes move {
+  0%{ transform: translate(50px);}
+  80%{transform: translateX(100px);}
+  100%{ transform: translate(calc(100%-40px));}
+}
+@keyframes zoomin {
+  0%{transform: scale(1);}
+  100%{transform: scale(1.3);}
+}
