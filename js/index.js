@@ -143,7 +143,7 @@ function gesture(event) {
     if(element.offsetLeft > 10){
       $(document).off('keydown',controlcar);
         $(document).off('click',gesture);
-        $(element).animate({left:"-=45"},150,"swing",addCarControlsGesture);
+        $(element).animate({left:"-=45"},100,"swing",addCarControlsGesture);
     }
 
   }else{
@@ -151,7 +151,7 @@ function gesture(event) {
     if(element.offsetLeft < 140){
       $(document).off('keydown',controlcar);
         $(document).off('click',gesture);
-        $(element).animate({left:"+=45"},150,"swing",addCarControlsGesture);
+        $(element).animate({left:"+=45"},100,"swing",addCarControlsGesture);
     }
 
   }
@@ -166,7 +166,7 @@ function moveRight(element){
       $(document).off('keydown',controlcar);
       $('.leftcontrol').off('click',moveLeft);
       $('.rightcontrol').off('click',moveRight);
-        $(element).animate({left:"+=45"},200,"swing",addCarControls);
+        $(element).animate({left:"+=45"},100,"swing",addCarControls);
     }
   }
 }
@@ -179,7 +179,7 @@ function moveLeft(element){
       $(document).off('keydown',controlcar);
       $('.leftcontrol').off('click',moveLeft);
       $('.rightcontrol').off('click',moveRight);
-        $(element).animate({left:"-=45"},200,"swing",addCarControls);
+        $(element).animate({left:"-=45"},100,"swing",addCarControls);
     }
   }
 }
